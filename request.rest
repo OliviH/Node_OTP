@@ -1,0 +1,21 @@
+GET http://localhost:5000/api
+
+###
+POST http://localhost:5000/api/register
+ 
+###
+POST http://localhost:5000/api/verify
+content-type: application/json
+
+{
+    "userId" : "1643663831943_7a21a4e7bc4be5dc118332e9e8667f0504d9e6842a680128a7b1e082fc43b221",
+    "token": "638310"
+}
+
+###
+POST http://localhost:5000/api/getQrCode
+content-type: application/json
+
+{
+    "userId" : "1643663831943_7a21a4e7bc4be5dc118332e9e8667f0504d9e6842a680128a7b1e082fc43b221"
+}
